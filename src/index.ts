@@ -350,7 +350,7 @@ function getPlayerHTML(botName: string): string {
 
 async function generateAudio(env: Env, text: string): Promise<{ success: boolean; audio_base64?: string; error?: string }> {
   try {
-    const t2aUrl = "https://api.minimaxi.com/v1/t2a_v2？GroupId=2102748090376130747";
+    const t2aUrl = "https://api.minimaxi.chat/v1/t2a_v2？GroupId=2102748090376130747";
     
     const response = await fetch(t2aUrl, {
       method: 'POST',
